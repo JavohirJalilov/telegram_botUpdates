@@ -21,10 +21,7 @@ def getUpdates():
         chat_id.append(chat_idx)
     return chat_id
     
-
-
 chat_id = getUpdates()
+print(chat_id)
 for idx in chat_id:
-    sendMessage(chat_id, f'Hello!')
-    
-    
+    sendMessage(idx,'Hello!')
